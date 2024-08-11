@@ -1,0 +1,59 @@
+input{
+    
+    height: 35px;
+    width: 220px;   
+    padding-left: 10px; 
+    border-radius: 10px;
+    
+    
+}
+/* div{
+    height: 550px;
+     width: 450px;
+      padding-left: 50px;
+      color: white;
+      text-align: center;
+      
+} */
+h1{
+    text-align: center;
+     padding-top: 5px;
+      padding-top: 25px; 
+}
+button{
+    border-radius: 10px; 
+    height: 40px; width: 100px; 
+    text-align: center;
+    font-size: 20px;
+}
+b{
+    font-size: 20px;
+}
+form{
+text-align: center; 
+}
+
+#d{
+width: 400px;
+height: 400px;
+text-align: center;
+margin-left: 350px;
+padding-top: 20px;
+}
+
+body{
+    align-items: center;
+    text-align: center;
+}
+
+img{
+    height: 40px;
+    width: 40px;
+    padding-right: 10px;
+   
+}
+
+.login{
+    height: 100px;
+    width: 100px;
+}

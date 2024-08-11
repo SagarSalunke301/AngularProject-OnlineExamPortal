@@ -1,0 +1,45 @@
+table,td,th{
+    border: 1px solid blueviolet;
+}
+table{
+    text-align: center;
+}
+
+td,th{
+    padding: 10px;
+}
+
+input[type='button']{
+    color: bisque;
+    font-size: 30px;
+    background-color: black;
+   
+    
+}
+form{
+    text-align: center;
+}
+span{
+    padding-left: 20px;
+   
+}
+input{
+    border-radius: 10px;
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+button{
+    border-radius: 15px;
+    height: 40px;
+    width: 150px;
+    background-color: antiquewhite;
+    color: blue;
+}
+
+div{
+    padding-left: 45%;
+}
+
+

@@ -1,0 +1,17 @@
+button{
+    display: inline;
+    border-radius: 20px;
+    background-color: rgb(95, 95, 194);
+    color: darkblue;
+    height: 250px;
+    width: 300px;
+    text-align: center;
+    
+    
+}
+#a{
+    display: flex;
+    justify-content: space-around;
+}
+
+

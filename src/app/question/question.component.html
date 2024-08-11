@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <span style="color: green;font-size: 18px;">{{message}}<span style="color: red;font-size: 22px; padding-left: 60%;">{{durationMessage}}</span></span>
+        <br><hr>
+       
+        
+        <span style="color: green;font-size: large; padding-left: 80%;">Time for question: {{maxtime}} seconds</span>
+        <br><br>
+        Question number:
+        <input type="button" *ngFor="let qno of allQnos" value="{{qno}}" (click)="getQuestion($event)">
+
+        <form>
+            <input type="text" name="qno" [(ngModel)]="question.qno"> <br><br>
+            
+            <input type="text" name="qtext" [(ngModel)]="question.qtext" size="100px" style="padding: 20px;"><br><br>
+
+            <br><br>
+
+            <input [checked]="isChecked(question.op1)" name="options" type="radio" (change)="saveAnswer()" value="{{question.op1}}" [(ngModel)]="submittedAnswer" class="css-checkbox" name="radioModel" [(ngModel)]="selected">  <span [style.color]="getColor(question.op1)">{{question.op1}}</span><br><br>
+            <input [checked]="isChecked(question.op2)" name="options" type="radio" (change)="saveAnswer()" value="{{question.op2}}" [(ngModel)]="submittedAnswer" class="css-checkbox" name="radioModel" [(ngModel)]="selected">  <span [style.color]="getColor(question.op2)">{{question.op2}}</span><br><br>
+            <input [checked]="isChecked(question.op3)" name="options" type="radio" (change)="saveAnswer()" value="{{question.op3}}" [(ngModel)]="submittedAnswer" class="css-checkbox" name="radioModel" [(ngModel)]="selected">  <span [style.color]="getColor(question.op3)">{{question.op3}}</span><br><br>
+            <input [checked]="isChecked(question.op4)" name="options" type="radio" (change)="saveAnswer()" value="{{question.op4}}" [(ngModel)]="submittedAnswer" class="css-checkbox" name="radioModel" [(ngModel)]="selected">  <span [style.color]="getColor(question.op4)">{{question.op4}}</span><br><br>
+
+
+             <input type="hidden" name="answer" [(ngModel)]="question.answer"><br><br>
+
+             <span id="a"><button (click)="nextQuestion()">Next</button> 
+             <button (click)="previousQuestion()">Previous</button></span>
+             <div><button (click)="endExam()">EndExam</button></div>
+
+        </form>
+    </body>
+</html>

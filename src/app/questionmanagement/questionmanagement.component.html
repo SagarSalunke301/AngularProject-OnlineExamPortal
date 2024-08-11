@@ -1,0 +1,41 @@
+<style>
+    div
+    {
+        text-align:center;
+       
+    }
+    </style>
+   
+    <div>
+    <form>
+    
+        <b>Q. No:-</b> <input type="text" name="qno" placeholder="enter question number" [(ngModel)]="question.qno"><br><br>
+        
+       <b>Question:-</b> <input type="text" name="qtext" placeholder="enter question" [(ngModel)]="question.qtext"><br><br>
+            
+        <b>Option1 :-</b> <input type="text" name="op1" placeholder="enter option" [(ngModel)]="question.op1"><br><br>
+        
+        <b>Option2 :-</b> <input type="text" name="op2" placeholder="enter option" [(ngModel)]="question.op2"><br><br>
+            
+        <b>Option3 :-</b> <input type="text" name="op3" placeholder="enter option" [(ngModel)]="question.op3"><br><br>
+        
+       <b>Option4 :-</b> <input type="text" name="op4" placeholder="enter option" [(ngModel)]="question.op4"><br><br>
+            
+        <b>Answer :-</b> <input type="text" name="answer" placeholder="enter answer" [(ngModel)]="question.answer"><br><br>
+        
+        <b>Subject :-</b> <input type="text" name="subject" placeholder="enter subject" [(ngModel)]="question.subject"><br><br>
+            
+        <br>
+        <div><button (click)="addQuestion()">Add Question</button>
+       
+        <button (click)="viewQuestion()">View Question</button>
+      
+        <button (click)="deleteQuestion()">Delete Question</button>
+       
+        <button (click)="updateQuestion()">Update Question</button></div>
+        
+    </form>
+    </div>
+
+    {{message}}
+

@@ -1,0 +1,45 @@
+<form>
+    <b>Username</b>
+    <input type="text"  name="username" placeholder="enter username" [(ngModel)]="user.username">
+    <b>password</b>
+    <input type="password" placeholder="enter password" name="password" [(ngModel)]="user.password">
+    <b>Mobile Number</b>
+    <input type="number" placeholder="enter mobile" name="mobno" [(ngModel)]="user.mobno">
+    <b>Email Address</b>
+    <input type="email" placeholder="enter email" name="emailid" [(ngModel)]="user.emailid" ><br><br>
+</form>
+
+<br><br><br>
+<div id="a">
+    
+    <input type="button"  value="viewUser" (click)="getUser()">
+
+    <input type="button"  value="update" (click)="updateUser()">
+
+    <input type="button"  value="delete" (click)="deleteUser()"></div>
+
+    <br><br><br>
+
+	 <table>
+
+		<tr>
+			<th>username</th>
+			<th>password</th>
+			<th>mobileno</th>
+			<th>email</th>
+	
+		</tr>
+	
+		<tr *ngFor="let user of users">
+	
+				<td> {{user.username}} </td>
+				<td> {{user.password}} </td>
+				<td> {{user.emailid}} </td>
+				<td> {{user.mobno}} </td>
+				
+	
+		</tr>
+	
+	
+	</table>
+	 

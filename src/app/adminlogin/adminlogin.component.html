@@ -1,0 +1,36 @@
+<html>
+
+<head>
+<style>
+
+</style>
+
+</head>
+
+<body>
+    <div id="d">
+       <img class="login" src="{{imglogin}}">
+
+	<form>
+	
+        <p> <img src="{{imgusername}}">   
+
+         <input type="text" placeholder="enter username" name="username" [(ngModel)]="user.username"></p>
+		
+
+		<p> <img src="{{imgpassword}}">
+		 <input type="password" placeholder="enter password" name="password" [(ngModel)]="user.password"></p><br>
+
+         <span style="color: red;font-size: large;">{{message}}</span>
+               <br><br>
+         <button (click)="validate2()"><b>Login</b></button><br>
+
+		
+        </form>
+    
+        
+    </div>
+        
+    </body>
+    </html>
+    
